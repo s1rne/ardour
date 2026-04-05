@@ -52,6 +52,7 @@
 #include "actions.h"
 #include "add_route_dialog.h"
 #include "add_video_dialog.h"
+#include "ai_window.h"
 #include "ardour_ui.h"
 #include "big_clock_window.h"
 #include "big_transport_window.h"
@@ -999,6 +1000,13 @@ ARDOUR_UI::create_rtawindow ()
 {
 	RTAWindow* rtawindow = new RTAWindow ();
 	return rtawindow;
+}
+
+AIWindow*
+ARDOUR_UI::create_aiwindow ()
+{
+	AIWindow* aiwindow = AIWindow::instance ();
+	return aiwindow;
 }
 
 void ARDOUR_UI::export_strips ()

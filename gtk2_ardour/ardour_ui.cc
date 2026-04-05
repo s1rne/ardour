@@ -133,6 +133,7 @@
 #include "about.h"
 #include "actions.h"
 #include "add_route_dialog.h"
+#include "ai_window.h"
 #include "ardour_message.h"
 #include "ardour_ui.h"
 #include "audio_clock.h"
@@ -333,6 +334,7 @@ ARDOUR_UI::ARDOUR_UI (int *argcp, char **argvp[], const char* localedir)
 	, key_editor (X_("key-editor"), _("Keyboard Shortcuts"), std::bind (&ARDOUR_UI::create_key_editor, this))
 	, luawindow (X_("luawindow"), S_("Window|Scripting"), std::bind (&ARDOUR_UI::create_luawindow, this))
 	, rtawindow (X_("rtawindow"), S_("Window|Realtime Analyzer"), std::bind (&ARDOUR_UI::create_rtawindow, this))
+	, aiwindow (X_("aiwindow"), S_("Window|AI Assistant"), std::bind (&ARDOUR_UI::create_aiwindow, this))
 	, video_server_process (0)
 	, have_configure_timeout (false)
 	, last_configure_time (0)
@@ -527,6 +529,7 @@ ARDOUR_UI::ARDOUR_UI (int *argcp, char **argvp[], const char* localedir)
 	WM::Manager::instance().register_window (&midi_port_matrix);
 	WM::Manager::instance().register_window (&luawindow);
 	WM::Manager::instance().register_window (&rtawindow);
+	WM::Manager::instance().register_window (&aiwindow);
 	WM::Manager::instance().register_window (&idleometer);
 	WM::Manager::instance().register_window (&io_plugin_window);
 	WM::Manager::instance().register_window (&plugin_manager_ui);

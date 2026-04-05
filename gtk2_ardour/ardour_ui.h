@@ -103,6 +103,7 @@
 #include "location_ui.h"
 #include "lua_script_manager.h"
 #include "luawindow.h"
+#include "ai_window.h"
 #include "plugin_dspload_window.h"
 #include "plugin_manager_ui.h"
 #include "rc_option_editor.h"
@@ -122,6 +123,7 @@ class BigClockWindow;
 class BigTransportWindow;
 class BundleManager;
 class EngineControl;
+class AIWindow;
 class ExportVideoDialog;
 class KeyEditor;
 class LocationUIWindow;
@@ -707,6 +709,7 @@ private:
 	WM::ProxyWithConstructor<KeyEditor> key_editor;
 	WM::ProxyWithConstructor<LuaWindow> luawindow;
 	WM::ProxyWithConstructor<RTAWindow> rtawindow;
+	WM::ProxyWithConstructor<AIWindow> aiwindow;
 
 	/* creator methods */
 
@@ -721,6 +724,7 @@ private:
 	KeyEditor*              create_key_editor ();
 	LuaWindow*              create_luawindow ();
 	RTAWindow*              create_rtawindow ();
+	AIWindow*               create_aiwindow ();
 
 	ARDOUR::SystemExec *video_server_process;
 

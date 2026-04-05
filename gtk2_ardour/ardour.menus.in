@@ -753,6 +753,7 @@
 
       <separator/><!-- Misc Configuration !-->
       <menuitem action='toggle-luawindow'/>
+      <menuitem action='toggle-aiwindow'/>
       <menuitem action='ManageTemplates'/>
       <menuitem action='toggle-transport-masters'/>
       <menuitem action='toggle-key-editor'/>

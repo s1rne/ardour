@@ -224,6 +224,7 @@ This mode provides many different operations on both regions and control points,
 @eep|Region/trim-back|                                                 k|trim back
 @wvis|Window/toggle-virtual-keyboard|                     <@SECONDARY@>k|show Virtual MIDI keyboard
 @wvis|Window/toggle-rtawindow|                <@SECONDARY@><@TERTIARY@>s|show Realtime Analyzer
+@wvis|Window/toggle-aiwindow|                 <@SECONDARY@><@TERTIARY@>i|show AI Assistant
 @trans|Transport/Loop|                                                 l|loop play (the loop range)
 @select|Editor/select-all-in-loop-range|                    <@PRIMARY@>l|select all in loop range
 @wvis|Window/toggle-locations|                            <@SECONDARY@>l|toggle locations dialog
